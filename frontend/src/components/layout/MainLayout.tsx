@@ -1,12 +1,14 @@
 import { Box, Toolbar } from "@mui/material";
+import { ReactNode } from "react";
+
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 
-type Props = {
-  children: React.ReactNode;
-};
+interface MainLayoutProps {
+  children: ReactNode;
+}
 
-export default function MainLayout({ children }: Props) {
+export default function MainLayout({ children }: MainLayoutProps) {
   return (
     <Box sx={{ display: "flex" }}>
       <Header />
