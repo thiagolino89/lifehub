@@ -1,15 +1,12 @@
-import { Typography } from "@mui/material";
+import PageHeader from "../../components/ui/PageHeader";
 
 export default function DashboardPage() {
   return (
     <>
-      <Typography variant="h4" gutterBottom>
-        Dashboard
-      </Typography>
-
-      <Typography>
-        Bem-vindo ao LifeHub.
-      </Typography>
+      <PageHeader
+        title="Dashboard"
+        subtitle="Bem-vindo ao LifeHub."
+      />
     </>
   );
 }
