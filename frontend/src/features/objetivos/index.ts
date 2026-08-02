@@ -1,0 +1,1 @@
+export { default as ObjetivosPage } from "./ObjetivosPage";
