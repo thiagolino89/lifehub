@@ -1,7 +1,7 @@
-import { getGoals } from "../api/goalsApi";
+import { GoalRepository } from "../repositories/GoalRepository";
 
 export class GoalService {
   static async getAll() {
-    return getGoals();
+    return GoalRepository.getAll();
   }
 }
