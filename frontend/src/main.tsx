@@ -8,16 +8,20 @@ import CssBaseline from "@mui/material/CssBaseline";
 
 import { theme } from "./theme/theme";
 
-import "./index.css";
-
+import QueryProvider from "./app/QueryProvider";
 import App from "./app/App";
+
+import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
+        <CssBaseline>
+          <QueryProvider>
+            <App />
+          </QueryProvider>
+        </CssBaseline>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
